@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$font-family: 'Open Sans', sans-serif;
+
+$white: #fefefe;
+$white-transparent: #ffffff80;
+
+$neutral-50: #fafafa;
+$neutral-100: #f5f5f5;
+$neutral-200: #e5e5e5;
+$neutral-300: #d4d4d4;
+$neutral-400: #a3a3a3;
+$neutral-500: #737373;
+$neutral-600: #525252;
+$neutral-700: #404040;
+$neutral-800: #262626;
+$neutral-900: #171717;
+$neutral-950: #0a0a0a;
+
+$orange-50: #fff7ed;
+$orange-100: #ffecd4;
+$orange-200: #ffd6a8;
+$orange-300: #ffb870;
+$orange-400: #ff8f37;
+$orange-500: #ff751a;
+$orange-600: #f05306;
+$orange-700: #c73d07;
+$orange-800: #9e300e;
+$orange-900: #7f2b0f;
+$orange-950: #451205;
+
+$radius-1: 0.375rem;
+$radius-2: 0.75rem;
+$radius-3: 1rem;
+$radius-4: 2rem;
+
+$container-width-lg: 84%;
+$container-width-mg: 92%;
+$container-width-sm: 50%;
+
+$transition: all 0.3s ease;
+
+$text-primary: $neutral-950;
+$text-secondary: $neutral-600;
+$surface-primary: $white;
+$surface-secondary: $neutral-50;
+$surface-tertiary: $neutral-100;
+$border-primary: $neutral-200;
+$border-secondary: $neutral-100;
+$border-tertiary: $neutral-300;
+$icon-primary: $neutral-950;
+$icon-secondary: $neutral-600;
+$icon-tertiary: $neutral-400;
+$accent-clr: $orange-500;
+
+$btn-primary-surface: $neutral-700;
+$btn-primary-text: $white;
+$btn-category-surface: $white;
+$btn-category-text: $orange-800;
+
+$themes: (
+  default: (
+    text-primary: $neutral-950,
+    text-secondary: $neutral-600,
+    surface-primary: $white,
+    surface-secondary: $neutral-50,
+    surface-tertiary: $neutral-100,
+    border-primary: $neutral-200,
+    border-secondary: $neutral-100,
+    border-tertiary: $neutral-300,
+    icon-primary: $neutral-950,
+    icon-secondary: $neutral-600,
+    icon-tertiary: $neutral-400,
+    accent-clr: $orange-800,
+  ),
+  dark: (
+    text-primary: $white,
+    text-secondary: $neutral-400,
+    surface-primary: $neutral-950,
+    surface-secondary: $neutral-900,
+    surface-tertiary: $neutral-800,
+    border-primary: $neutral-700,
+    border-secondary: $neutral-800,
+    border-tertiary: $neutral-600,
+    icon-primary: $white,
+    icon-secondary: $neutral-400,
+    icon-tertiary: $neutral-600,
+    accent-clr: $orange-500,
+  ),
+);

@@ -1,0 +1,27 @@
+.post-detail {
+  width: 50%;
+  background-color: $surface-primary;
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.post-detail__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.post-detail__thumbnail {
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30rem;
+  overflow: hidden;
+}
+.post-detail__content {
+  padding-inline: 1rem;
+}
+
+.post-detail h1,
+.post-detail p {
+  margin-bottom: 1.75rem;
+}

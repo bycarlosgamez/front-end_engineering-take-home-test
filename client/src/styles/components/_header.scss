@@ -1,0 +1,90 @@
+.nav {
+  width: 100vw;
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  background: $white-transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 4px solid $surface-primary;
+  backdrop-filter: blur(20px);
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 3rem;
+  display: block;
+  height: 100%;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__menu li:hover {
+  border-bottom: 2px solid $orange-200;
+  color: $orange-800;
+  transition: $transition;
+}
+
+.nav__toggle-btn {
+  display: none;
+}
+
+.active {
+  color: $accent-clr;
+}
+
+@media screen and (max-width: 800px) {
+  .nav__container {
+    position: relative;
+  }
+
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__menu.open {
+    display: flex;
+  }
+
+  .nav__menu li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+  }
+
+  .nav__menu li a {
+    display: block;
+    background-color: $white;
+    padding: 0.75rem 2.5rem;
+  }
+
+  .nav__menu li:hover {
+    border: none;
+  }
+
+  .nav__toggle-btn {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: $btn-primary-surface;
+    cursor: pointer;
+  }
+
+  .active {
+    color: $accent-clr;
+  }
+}

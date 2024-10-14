@@ -1,0 +1,17 @@
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/base';
+
+@import 'components/footer';
+@import 'components/header';
+@import 'components/postAuthor';
+@import 'components/postCard';
+@import 'components/skeleton';
+
+@import 'pages/blog';
+@import 'pages/blogPost';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/projects';
+
+@import 'base/mediaqueries';
